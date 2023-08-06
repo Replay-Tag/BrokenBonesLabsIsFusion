@@ -60,7 +60,7 @@ namespace LiteNetLib
             }
             catch
             {
-                NetDebug.WriteError("[AC] Invalid incoming data");
+                NetDebug.WriteError("[AC] Invalid bone data incoming");
             }
             if (Result == ConnectionRequestResult.Accept)
                 return _listener.OnConnectionSolved(this, null, 0, 0);
