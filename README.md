@@ -1,4 +1,4 @@
-# BONELAB Fusion Release
+# BrokenBonesLabsIsFusion
 A multiplayer mod for BONELAB featuring support for Oculus and SteamVR.
 This is currently only for PCVR platforms. [You can view a basic installation guide here.](INSTALLATION.md)
 ## Networking
@@ -40,3 +40,6 @@ https://github.com/Lakatrazz/Fusion-Module-Example
 ## Disclaimer
 
 #### THIS PROJECT IS NOT AFFILIATED WITH ANY OTHER MULTIPLAYER MODS OR STRESS LEVEL ZERO! This is its own standalone mod and shares no code with others, any similarities are coincidental!
+
+
+## my bones hurt
