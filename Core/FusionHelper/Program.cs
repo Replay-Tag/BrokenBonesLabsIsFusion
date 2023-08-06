@@ -35,7 +35,7 @@ Thread commandThread = new(() =>
                     {
                         // TODO: check if id is valid / trycatch it
                         ulong serverId = ulong.Parse(command.Split(' ')[1]);
-                        Console.WriteLine("Attempting server connection to " + serverId);
+                        Console.WriteLine("Attempting bone server connection to " + serverId);
                         NetDataWriter writer = NetworkHandler.NewWriter(MessageTypes.JoinServer);
                         writer.Put(serverId);
                         NetworkHandler.SendToClient(writer);
@@ -55,7 +55,7 @@ Thread commandThread = new(() =>
                         break;
                     }
                 default:
-                    Console.WriteLine("Unknown command.");
+                    Console.WriteLine("Unknown bone command.");
                     break;
             }
         }
