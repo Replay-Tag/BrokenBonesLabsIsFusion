@@ -146,7 +146,7 @@ namespace LabFusion
             NetworkLayerDeterminer.LoadLayer();
 
             if (NetworkLayerDeterminer.LoadedLayer == null) {
-                FusionLogger.Error("The target network layer is null!");
+                FusionLogger.Error("The bones network layer is null!");
                 return;
             }
 
@@ -186,7 +186,7 @@ namespace LabFusion
             string sceneName = FusionSceneManager.Level.Title;
             
 #if DEBUG
-            FusionLogger.Log($"Main scene {sceneName} was initialized.");
+            FusionLogger.Log($"Bones scene {sceneName} was initialized.");
 #endif
             // Fix random static grips in the scene
             StaticGripFixer.OnMainSceneInitialized();
@@ -236,6 +236,9 @@ namespace LabFusion
 
             // Store rig info/update avatars
             RigData.OnRigUpdate();
+
+            // Bones up networking
+            InternalLayerHelpers.OnCleanupLayer();
 
             // Update popups
             FusionPopupManager.OnUpdate();
@@ -306,6 +309,7 @@ namespace LabFusion
 
         public override void OnGUI() {
             InternalLayerHelpers.OnGUILayer();
+            
         }
     }
 }
