@@ -238,7 +238,7 @@ namespace LabFusion
             RigData.OnRigUpdate();
 
             // Bones up networking
-            InternalLayerHelpers.OnCleanupLayer();
+            InternalLayerHelpers.OnGUILayer();
 
             // Update popups
             FusionPopupManager.OnUpdate();
@@ -309,7 +309,6 @@ namespace LabFusion
 
         public override void OnGUI() {
             InternalLayerHelpers.OnGUILayer();
-            
         }
     }
 }
