@@ -53,7 +53,7 @@ namespace Steamworks.Data
 			get
 			{
 				if ( !SteamNetworkingSockets.Internal.GetConnectionName( this, out var strVal ) )
-					return "ERROR";
+					return "Bad to  the bone had a ERROR";
 
 				return strVal;
 			}
